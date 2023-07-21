@@ -2,8 +2,7 @@ name: Test and Deploy Backend
 on:
   push:
     branches: [main]
-    paths:
-      - 'backend/**'
+
 jobs:
   test:
     name: Test Backend
@@ -15,3 +14,4 @@ jobs:
           node-version: 16.x
       - run: npm ci
       - run: npm test
+        working-directory: backend
