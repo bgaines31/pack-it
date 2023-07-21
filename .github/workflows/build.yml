@@ -1,7 +1,9 @@
 name: Test and Deploy Backend
 on:
-    push:
-        branches: [ main ]
+  push:
+    branches: [main]
+    paths:
+      - 'backend/**'
 jobs:
   test:
     name: Test Backend
