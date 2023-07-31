@@ -1,5 +1,6 @@
 import React from 'react';
-
+// import {suitcase} from "../images/"
+import { Suitcase } from '../images/Suitcase';
 export const Navbar = ({ trips }) => {
   console.log(trips);
   return (
@@ -7,14 +8,14 @@ export const Navbar = ({ trips }) => {
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img
-              src="/docs/5.1/assets/brand/bootstrap-logo.svg"
+            {/* <img
+              // src={<Suitcase />}
               alt=""
               width="30"
               height="24"
               class="d-inline-block align-text-top"
-            />
-            Bootstrap
+            /> */}
+            Pack it!
           </a>
           <button
             class="navbar-toggler"

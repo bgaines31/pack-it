@@ -6,7 +6,7 @@ export const TripCard = ({ trip }) => {
   const { endDate, startDate, coverPhoto, id, title } = trip;
   console.log('trip card: ', id);
   return (
-    <Card style={{ width: '18rem' }}>
+    <Card style={{ width: '18rem', marginBottom: "4em" }}>
       <Card.Img variant="top" src={coverPhoto} style={{ maxHeight: '9rem' }}/>
       <Card.Body>
         <Card.Title style={{textAlign: "center"}}>{title}</Card.Title>
